@@ -1,10 +1,10 @@
 /* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 /* COMMON */
 
@@ -12,13 +12,22 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 ul {
     list-style-type: none;
 }
 
-li {
+/* li {
 
-}
+} */
 
 
 /* Utility */
@@ -27,6 +36,13 @@ li {
     padding-left: 10px;
 }
 
+.white {
+    color: white;
+}
+
+.grey {
+    color:#a3a3a3;
+}
 /* END COMMON */
 
 
@@ -57,7 +73,7 @@ main {
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
+    color: #a3a3a3;
 
 
     /* da definire */
@@ -67,13 +83,31 @@ main {
     background-color: bisque;
 }
 
+/* Logo */
+
 .logo {
-    height: 150px;
-    vertical-align: middle;
-    line-height: 80px;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 
     /* test */
     background-color: blue;
+}
+
+.logo img {
+    width: 30px;
+    padding-right: 5px;
+}
+
+.brand-name {
+    font-size: 20px;
+}
+
+.trademark {
+   
+   display: inline-block;
 }
 
 /* Nav */
@@ -85,17 +119,28 @@ nav {
     background-color: green;
 }
 
+nav img {
+    width: 20px;
+}
+
 .home-container {
     border-left: 5px solid #59812f;
     padding-left: -5px;
 }
 
 .home {
-
     
 
     /* test */
     background-color: lightgrey;
+}
+
+.inactive {
+    border-left: 5px solid transparent;
+}
+
+.active {
+    border-left: 5px solid #59812f;
 }
 
 .search {
@@ -166,8 +211,13 @@ footer {
     right: 0;
     text-align: right;
     vertical-align: middle;
-    line-height: 80px;
-    
+    line-height: 80px;  
+}
+
+.upgrade-banner a {
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 20px;
 }
 
 /* END UPGRADE BANNER */
