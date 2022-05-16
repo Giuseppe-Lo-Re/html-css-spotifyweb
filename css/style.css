@@ -4,3 +4,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* COMMON */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* END COMMON */
+
+
+/* MAIN */
+
+.app-wrapper {
+    width: 100%;
+    height: 100vh;
+
+    /* test */
+    background-color: pink;  
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+
+
+    /* test */
+    background-color: lightblue;
+}
+
+.left-nav {
+    width: 250px;
+    overflow-y: hidden;
+
+
+    /* da definire */
+    min-width: none;
+
+    /* test */
+    background-color: bisque;
+}
+
+.main-content {
+    width: calc(100% - 250px);
+    overflow-y: auto;
+
+    /* test */
+    background-color: salmon;
+}
+
+/* END MAIN */
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 100px;
+    overflow-y: auto;
+    
+
+    /* test */
+    background-color: lightgreen;
+}
+
+/* END FOOTER */
+
+
+/* UPGRADE BANNER */
+
+.upgrade-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 80px;
+    width: calc(100% - 250px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 80px;
+    
+}
+
+/* END UPGRADE BANNER */
