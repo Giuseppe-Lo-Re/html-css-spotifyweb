@@ -295,9 +295,16 @@ footer {
         display: none;
     }
 
-    .install-logo {
+    .install-app {
         display: none;
     }
 
+    .username {
+        display: none;
+    }
+
+    .installation {
+        border-bottom: 0;
+    }
 
 }
