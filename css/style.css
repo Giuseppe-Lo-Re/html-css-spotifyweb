@@ -12,6 +12,21 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+
+}
+
+
+/* Utility */
+
+.pad-left10 {
+    padding-left: 10px;
+}
+
 /* END COMMON */
 
 
@@ -35,9 +50,14 @@ main {
     background-color: lightblue;
 }
 
+/* Left Nav */
+
 .left-nav {
     width: 250px;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
 
 
     /* da definire */
@@ -47,10 +67,71 @@ main {
     background-color: bisque;
 }
 
+.logo {
+    height: 150px;
+    vertical-align: middle;
+    line-height: 80px;
+
+    /* test */
+    background-color: blue;
+}
+
+/* Nav */
+
+nav {
+    height: 80px;
+
+    /* test */
+    background-color: green;
+}
+
+.home-container {
+    border-left: 5px solid #59812f;
+    padding-left: -5px;
+}
+
+.home {
+
+    
+
+    /* test */
+    background-color: lightgrey;
+}
+
+.search {
+
+
+    /* test */
+    background-color: lightseagreen;
+}
+
+.library {
+
+
+    /* test */
+    background-color: lightpink;
+}
+
+.playlists {
+    flex-grow: 1;
+
+    /* test */
+    background-color: blueviolet;
+}
+
+.account {
+    height: 80px;
+
+    /* test */
+    background-color: brown;
+}
+
+/* Main Content */
+
 .main-content {
     width: calc(100% - 250px);
     overflow-y: auto;
-
+    padding-top: 100px;
     /* test */
     background-color: salmon;
 }
