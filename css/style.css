@@ -25,12 +25,15 @@ ul {
     list-style-type: none;
 }
 
+.flex {
+    display: flex;
+}
 
 
 /* Utility */
 
-.pad-left10 {
-    padding-left: 10px;
+.pad-left20 {
+    padding-left: 20px;
 }
 
 .white {
@@ -69,10 +72,12 @@ main {
     flex-direction: column;
     background-color: black ;
     color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 nav li {
-    padding-bottom: 10px;
+    padding: 5px;
 }
 
 /* Logo */
@@ -82,19 +87,23 @@ nav li {
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding: 10px 0 20px 10px;
 
 }
 
 .logo-small {
-    width: 16%;
+    width: 40px;
     display: none;
 }
 
 .logo {
-    width: 52%;
+    width: 130px;
 }
 
+nav li img {
+    width: 25px;
+    height: 25px;
+}
 
 
 /* Nav */
@@ -103,22 +112,84 @@ nav img {
     width: 20px;
 }
 
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
 .active {
     border-left: 3px solid #adff2f;
 }
 
 .playlists {
     flex-grow: 1;
+}
 
-    /* test */
-    background-color: blueviolet;
+.title-playlist {
+    padding: 7px;
+}
+
+.plus {
+    width: 38px;
+    height: 38px;
+    color: black;
+    background-color: #a3a3a3;
+    font-size: 40px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+}
+
+.create-playlist {
+    height: 38px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.playlists li {
+    padding-top: 15px;
 }
 
 .account {
     height: 80px;
 
-    /* test */
-    background-color: brown;
+    /* test
+    background-color: brown; */
+}
+
+.account img {
+    width: 15px;
+}
+
+.installation {
+    border-bottom: 1px solid #a3a3a3;
+    padding: 10px 0;
+}
+
+.install-logo {
+    padding: 0 5px;
+}
+
+
+.user {
+    padding: 10px 0;
+}
+
+.user-logo img {
+    transform: scale(1.6);
+    background-color: #a3a3a3;
+    border-radius: 50px;
+}
+
+.user span {
+    padding-left: 10px;
+
 }
 
 /* common */
@@ -201,7 +272,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     .left-nav {
-        width:100%
+        width: 60px;
     }
 
     .main-content {
