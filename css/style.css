@@ -25,9 +25,6 @@ ul {
     list-style-type: none;
 }
 
-/* li {
-
-} */
 
 
 /* Utility */
@@ -43,6 +40,7 @@ ul {
 .grey {
     color:#a3a3a3;
 }
+
 /* END COMMON */
 
 
@@ -50,20 +48,16 @@ ul {
 
 .app-wrapper {
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
 
-    /* test */
-    background-color: pink;  
+    /* da ricontrollare */
+    /* min-width: 600px;  */
 }
 
 main {
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
-
-
-    /* test */
-    background-color: lightblue;
 }
 
 /* Left Nav */
@@ -73,88 +67,44 @@ main {
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
+    background-color: black ;
     color: #a3a3a3;
+}
 
-
-    /* da definire */
-    min-width: none;
-
-    /* test */
-    background-color: bisque;
+nav li {
+    padding-bottom: 10px;
 }
 
 /* Logo */
 
-.logo {
+.logos-container {
     height: 80px;
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 10px;
 
-    /* test */
-    background-color: blue;
 }
 
-.logo img {
-    width: 30px;
-    padding-right: 5px;
+.logo-small {
+    width: 16%;
+    display: none;
 }
 
-.brand-name {
-    font-size: 20px;
+.logo {
+    width: 52%;
 }
 
-.trademark {
-   
-   display: inline-block;
-}
+
 
 /* Nav */
-
-nav {
-    height: 80px;
-
-    /* test */
-    background-color: green;
-}
 
 nav img {
     width: 20px;
 }
 
-.home-container {
-    border-left: 5px solid #59812f;
-    padding-left: -5px;
-}
-
-.home {
-    
-
-    /* test */
-    background-color: lightgrey;
-}
-
-.inactive {
-    border-left: 5px solid transparent;
-}
-
 .active {
-    border-left: 5px solid #59812f;
-}
-
-.search {
-
-
-    /* test */
-    background-color: lightseagreen;
-}
-
-.library {
-
-
-    /* test */
-    background-color: lightpink;
+    border-left: 3px solid #adff2f;
 }
 
 .playlists {
@@ -171,6 +121,13 @@ nav img {
     background-color: brown;
 }
 
+/* common */
+
+.inactive {
+    border-left: 3px solid transparent;
+}
+
+
 /* Main Content */
 
 .main-content {
@@ -178,7 +135,7 @@ nav img {
     overflow-y: auto;
     padding-top: 100px;
     /* test */
-    background-color: salmon;
+    background-color: #141922;
 }
 
 /* END MAIN */
@@ -221,3 +178,55 @@ footer {
 }
 
 /* END UPGRADE BANNER */
+
+
+/******************** MEDIA QUERY ********************/
+
+/* MEDIUM */
+
+@media screen and (max-width: 1100px) {
+    
+
+}
+
+/* SMALL */
+
+@media screen and (max-width: 700px) {
+    
+
+}
+
+/* EXTRA SMALL */
+
+@media screen and (max-width: 600px) {
+
+    .left-nav {
+        width:100%
+    }
+
+    .main-content {
+        width: 100%;
+    }
+    
+    .logo-small {
+        display: inline-block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav li span {
+        display: none;
+    }
+
+    .playlists {
+        display: none;
+    }
+
+    .install-logo {
+        display: none;
+    }
+
+
+}

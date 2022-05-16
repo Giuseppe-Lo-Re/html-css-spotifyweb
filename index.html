@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Media Query -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Font Family -->
@@ -25,24 +26,11 @@
             <div class="left-nav">
 
                 <!-- Logo -->
-                <div class="logo pad-left10">
+                <div class="logos-container pad-left10">
 
-                    <a href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
+                    <a class="logo-small" href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
 
-                    <span class="brand">
-
-                        <span class="brand-name">
-                            <a href="#">Spotify</a> 
-                        </span>
-
-                        <span class="trademark">
-                            <i class="fas fa-registered fa-2xs"></i>
-                        </span>
-
-                    </span>
-                    
-
-                    
+                    <a class="logo"href="#"><img src="img/logo.svg" alt="logo"></a>
 
                 </div>
 
@@ -52,16 +40,17 @@
 
                         <li class="home pad-left10 active white">
 
-                            <img src="img/home.svg" alt="home">
+                            <img class="logo-home" src="img/home.svg" alt="home">
 
                             <span>
                                 Home
                             </span>
+                            
                         </li>
 
                         <li class="search pad-left10 inactive">
                             
-                            <img src="img/search.svg" alt="search">
+                            <img class="logo-search" src="img/search.svg" alt="search">
 
                             <span>
                                 Cerca
@@ -71,7 +60,7 @@
     
                         <li class="library pad-left10 inactive">
 
-                            <img src="img/libreria.svg" alt="library">
+                            <img class="logo-library" src="img/libreria.svg" alt="library">
 
                             <span>
                                 La tua libreria
@@ -136,13 +125,29 @@
 
                 <!-- Account -->
                 <div class="account pad-left10">
-                    
+
                     <div class="installation">
-                        installa app
+
+                        <span class="install-logo">
+
+                        </span>
+
+                        <span>
+                            installa app
+                        </span> 
+
                     </div>
 
                     <div class="user">
-                        John Doe
+
+                        <span class="user-logo">
+
+                        </span>
+
+                        <span>
+                            John Doe
+                        </span> 
+
                     </div>
 
                 </div>
