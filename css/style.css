@@ -32,8 +32,16 @@ ul {
 
 /* Utility */
 
+.pad-left10 {
+    padding-left: 10px;
+}
+
 .pad-left20 {
     padding-left: 20px;
+}
+
+.pad-right20 {
+    padding-right: 20px;
 }
 
 .white {
@@ -47,7 +55,7 @@ ul {
 /* END COMMON */
 
 
-/* MAIN */
+/*---------- MAIN ----------*/
 
 .app-wrapper {
     width: 100%;
@@ -63,20 +71,27 @@ main {
     display: flex;
 }
 
-/* Left Nav */
+/* LEFT NAV */
 
 .left-nav {
+    background-color: black ;
+}
+
+/* Top left Nav */
+
+.top-left-nav {
     width: 250px;
+    height: calc(100% - 80px);
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
-    background-color: black ;
     color: #a3a3a3;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 
-nav li {
+
+.menu li {
     padding: 5px;
 }
 
@@ -100,24 +115,24 @@ nav li {
     width: 130px;
 }
 
-nav li img {
+.menu li img {
     width: 25px;
     height: 25px;
 }
 
 
-/* Nav */
+/* Menù */
 
-nav img {
+.menu img {
     width: 20px;
 }
 
-nav li {
+.menu li {
     display: flex;
     align-items: center;
 }
 
-nav li span {
+.menu li span {
     padding-left: 5px;
 }
 
@@ -130,7 +145,8 @@ nav li span {
 }
 
 .title-playlist {
-    padding: 7px;
+    font-size: 16px;
+    padding-top: 20px;
 }
 
 .plus {
@@ -156,11 +172,14 @@ nav li span {
     padding-top: 15px;
 }
 
-.account {
-    height: 80px;
+/* END Top Left Nav */
 
-    /* test
-    background-color: brown; */
+
+/* Bottom Left Nav */
+
+.bottom-left-nav {
+    height: 80px;
+    font-size: 12px;
 }
 
 .account img {
@@ -169,16 +188,22 @@ nav li span {
 
 .installation {
     border-bottom: 1px solid #a3a3a3;
-    padding: 10px 0;
+    padding: 12px 0;
+    height: 40px;
+    vertical-align: middle;
 }
 
 .install-logo {
     padding: 0 5px;
+    height: 40px;
+    vertical-align: middle;
 }
 
 
 .user {
     padding: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .user-logo img {
@@ -198,6 +223,7 @@ nav li span {
     border-left: 3px solid transparent;
 }
 
+/*  END Bottom Left Nav */
 
 /* Main Content */
 
@@ -281,13 +307,14 @@ footer {
     
     .logo-small {
         display: inline-block;
+        
     }
 
     .logo {
         display: none;
     }
 
-    nav li span {
+    .menu li span {
         display: none;
     }
 

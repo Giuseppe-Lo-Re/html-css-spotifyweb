@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- Media Query -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
     <title>My Spotify</title>
 </head>
 <body>
@@ -27,135 +32,143 @@
 
                 <!-- Top Nav -->
 
-                <div class="top-left-nav">
+                <nav class="top-left-nav">
+                    
+                    <!-- Logo -->
+                    <div class="logos-container pad-left20">
 
-                </div>
-                <!-- Logo -->
-                <div class="logos-container pad-left20">
+                        <a class="logo-small" href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
 
-                    <a class="logo-small" href="#"><img src="img/logo-small.svg" alt="logo-small"></a>
+                        <a class="logo"href="#"><img src="img/logo.svg" alt="logo"></a>
 
-                    <a class="logo"href="#"><img src="img/logo.svg" alt="logo"></a>
+                    </div>
 
-                </div>
+                    <!-- Nav -->
+                    <div class="menu pad-left10">
+                        <ul>
 
-                <!-- Nav -->
-                <nav>
-                    <ul>
+                            <li class="home pad-left20 active white">
 
-                        <li class="home pad-left20 active white">
+                                <a href="#"><img class="logo-home" src="img/home.svg" alt="home"></a>
 
-                            <a href="#"><img class="logo-home" src="img/home.svg" alt="home"></a>
-
-                            <span>
-                                <a href="#">Home</a> 
-                            </span>
+                                <span>
+                                    <a href="#">Home</a> 
+                                </span>
                             
-                        </li>
+                            </li>
 
-                        <li class="search pad-left20 inactive">
+                            <li class="search pad-left20 inactive">
                             
-                            <a href="#"><img class="logo-search" src="img/search.svg" alt="search"></a>
+                                <a href="#"><img class="logo-search" src="img/search.svg" alt="search"></a>
 
-                            <span>
-                                <a href="#">Cerca</a> 
-                            </span>
+                                <span>
+                                    <a href="#">Cerca</a> 
+                                </span>
                             
-                        </li>
+                            </li>
     
-                        <li class="library pad-left20 inactive">
+                            <li class="library pad-left20 inactive">
 
-                            <a href="#"><img class="logo-library" src="img/libreria.svg" alt="library"></a>
+                                <a href="#"><img class="logo-library" src="img/libreria.svg" alt="library"></a>
 
-                            <span>
-                                <a href="#">La tua libreria</a> 
-                            </span>
+                                <span>
+                                    <a href="#">La tua libreria</a> 
+                                </span>
 
-                        </li>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
+
+                    <!-- Playlists -->
+                    <div class="playlists pad-left20">
+
+                        <!-- Title -->
+                        <div class="title-playlist white">
+                        PLAYLIST
+                        </div>
+
+                        <ul>
+                            <li>
+
+                                <div class="plus">
+                                    <a href="#">+</a>
+                                </div>
+
+                                <span class="create-playlist">
+                                    <a href="#">Crea Playlist</a> 
+                                </span>
+
+                                </li>
+
+                            <li>
+                                <a href="#">Nome Playlist</a> 
+                            </li>
+
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                        </ul>
+
+                    </div>                    
+
                 </nav>
 
-                <!-- Playlists -->
-                <div class="playlists pad-left20">
+                <!-- Bottom Nav -->
 
-                    <!-- Title -->
-                    <div class="title-playlist white">
-                        PLAYLIST
-                    </div>
+                <nav class="bottom-left-nav">
 
-                    <ul>
-                        <li>
+                    <!-- Account -->
 
-                            <div class="plus">
-                                 <a href="#">+</a>
-                            </div>
+                    <div class="account pad-left20 pad-right20">
 
-                            <span class="create-playlist">
-                                 <a href="#">Crea Playlist</a> 
+                        <div class="installation">
+    
+                            <span class="install-logo">
+                                <a href="#"><img src="img/download.svg" alt="download"></a>
                             </span>
-
-                        </li>
-
-                        <li>
-                            <a href="#">Nome Playlist</a> 
-                        </li>
-
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <!-- Account -->
-                <div class="account pad-left20">
-
-                    <div class="installation">
-
-                        <span class="install-logo">
-                            <a href="#"><img src="img/download.svg" alt="download"></a>
-                        </span>
-
-                        <span class="install-app">
-                            <a href="#">installa app</a> 
-                        </span> 
-
+    
+                            <span class="install-app grey">
+                                <a href="#">installa app</a> 
+                            </span> 
+    
+                        </div>
+    
+                        <div class="user">
+    
+                            <span class="user-logo">
+                                <a href="#"><img src="img/profile.svg" alt="profile"></a>
+                            </span>
+    
+                            <span class="username white">
+                                <a href="#">John Doe</a> 
+                            </span> 
+    
+                        </div>
+    
                     </div>
-
-                    <div class="user">
-
-                        <span class="user-logo">
-                            <a href="#"><img src="img/profile.svg" alt="profile"></a>
-                        </span>
-
-                        <span class="username white">
-                            <a href="#">John Doe</a> 
-                        </span> 
-
-                    </div>
-
-                </div>
+                </nav>
+                
             </div>
 
             <!-- Main Content -->
