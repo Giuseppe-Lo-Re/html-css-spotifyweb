@@ -25,11 +25,6 @@ ul {
     list-style-type: none;
 }
 
-.flex {
-    display: flex;
-}
-
-
 /* Utility */
 
 .pad-left10 {
@@ -46,6 +41,10 @@ ul {
 
 .grey {
     color:#a3a3a3;
+}
+
+.flex {
+    display: flex;
 }
 
 /* END COMMON */
@@ -71,6 +70,10 @@ main {
 
 .left-nav {
     background-color: black ;
+}
+
+.left-nav img {
+    opacity: calc(0.7);
 }
 
 /* Top left Nav */
@@ -142,7 +145,7 @@ main {
 
 .title-playlist {
     font-size: 16px;
-    padding-top: 20px;
+    padding: 20px 0 10px 0;
 }
 
 .plus {
@@ -163,6 +166,11 @@ main {
     display: inline-block;
     padding-left: 5px;
 }
+
+/* .playlist-list {
+    width: 40%;
+    overflow: auto;
+} */
 
 .playlists li {
     padding-top: 15px;
@@ -230,6 +238,8 @@ main {
     background-color: #141922;
 }
 
+/* END Main Content */
+
 /* END MAIN */
 
 
@@ -251,11 +261,46 @@ footer {
 }
 
 .info-song-left {
-    background-color: lightpink;
+    width: 220px;
+    height: 40px;
+}
+
+.info-song-left img {
+    width: 40px;
+    
+}
+
+.info-song-container {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cover-details-container {
+    display: flex;
+    align-items: center;
+}
+
+.details-song {
+    padding-left: 10px;
+
+}
+
+.author-name {
+    font-weight:700;
+    width: 50%;
 }
 
 .song-controls-center {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+}
+
+.icons-controls i {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
 }
 
 .volume-controls-right {
@@ -294,6 +339,10 @@ footer {
 
 .upgrade-banner:hover {
     transform: scale(1.2);
+}
+
+.left-nav img:hover {
+    opacity: calc(1);
 }
 
 .search:hover,
