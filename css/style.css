@@ -71,6 +71,7 @@ main {
 .left-nav {
     background-color: black ;
     width: 250px;
+    overflow-y: hidden;
 }
 
 .left-nav img,
@@ -103,7 +104,6 @@ main {
     display: flex;
     align-items: center;
     padding: 10px 0 20px 10px;
-
 }
 
 .logo-small {
@@ -167,11 +167,6 @@ main {
     display: inline-block;
     padding-left: 5px;
 }
-
-/* .playlist-list {
-    width: 40%;
-    overflow: auto;
-} */
 
 .playlists li {
     padding-top: 15px;
@@ -249,7 +244,7 @@ main {
 footer {
     width: 100%;
     height: 100px;
-    overflow-y: auto;
+    overflow-y: hidden;
     background-color: #282825;
 }
 
@@ -258,7 +253,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 
 .info-song-left {
@@ -286,7 +280,7 @@ footer {
 
 .details-song {
     padding-left: 10px;
-
+    font-weight:600;
 }
 
 .author-name {
@@ -294,23 +288,106 @@ footer {
     width: 50%;
 }
 
+.song-name {
+    font-size: 10px;
+    padding-top: 2px;
+}
+
 .save-download-song {
     display: flex;
 }
 
 .save-download-song i {
-    padding-left: 10px;
+    padding: 0 0 15px 10px;
+}
+
+.song-controls-center {
+    padding: 0 50px;
+}
+
+.icons-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 .icons-controls i {
     padding: 10px;
-    font-size: 20px;
+    /* font-size: 20px; */
     color: white;
-    border-bottom: 3px solid #a3a3a3;
+}
+
+.play i {
+    /* font-size:14px; */
+}
+
+.timer {
+    color: white;
+    font-size: 10px;
+}
+
+.time-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-wrap {
+    height: 5px;
+    width: 500px;
+    background-color: #4b4b4b; 
+    margin: 0 10px;
+}
+
+.track-bar { 
+    height: 5px;
+    width: 100px;
+    background-color: white;
+    opacity: calc(0.7);
+    position: absolute;
+}
+
+.bullet {
+    display: none;
+    position:relative;
+    top: -8px;
+    left: 91px;
 }
 
 .volume-controls-right {
-    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+}
+
+.icons-volume {
+    width: 150px;
+    color: white;
+    padding-right: 20px;
+}
+
+.icons-volume i {
+    padding-left: 20px;
+}
+
+.max-volume {
+    height: 5px;
+    width: 150px;
+    background-color: #4b4b4b; 
+}
+
+.track-volume { 
+    height: 5px;
+    width: 40px;
+    background-color: white;
+    opacity: calc(0.7);
+}
+
+.track-wrap,
+.track-bar,
+.max-volume,
+.track-volume {
+    border-radius: 20px;
 }
 
 /* END FOOTER */
@@ -328,16 +405,17 @@ footer {
     right: 0;
     font-size: 12px;
     text-align: right;
-    padding: 25px 5px 0 0;
+    padding: 15px 30px 0 0;
     
 
 }
 
 .upgrade-banner a {
     border: 1px solid white;
-    padding: 5px 40px;
+    padding: 15px 50px;
     border-radius: 50px;
     display: inline-block;
+    font-weight: 700;
     
 }
 
@@ -347,7 +425,7 @@ footer {
 /*  HOVER */
 
 .upgrade-banner a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .left-nav img:hover {
@@ -358,7 +436,9 @@ footer {
 .library:hover,
 .create-playlist:hover,
 .name-playlist:hover,
-.install-app:hover {
+.install-app:hover,
+.save-song:hover,
+.download-song:hover {
     color: white;
 }
 
@@ -373,6 +453,18 @@ footer {
 
 .save-download i:hover {
     color: white;
+}
+
+.play:hover {
+    transform: scale(1.1);
+}
+
+.track-bar:hover { 
+    background-color: #adff2f;
+}
+
+.bullet:hover {
+    display: block;
 }
 
 /* END HOVER */
@@ -391,7 +483,9 @@ footer {
 
 @media screen and (max-width: 700px) {
     
-
+   .save-download-song {
+       display: block;
+   } 
 }
 
 /* EXTRA SMALL */
