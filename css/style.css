@@ -232,68 +232,42 @@ main {
     overflow-y: auto;
     padding-top: 100px;
     background-color: #141922;
+    color:#a3a3a3;
 }
 
 .index {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 5px;
-
-    /* test
-    background-color: #adff2f; */
+    
+    
+    font-size: 14px;
 }
 
-.index div {
-    padding: 0 10px;
-    color: #77797f;
+.index ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.index li {
+    padding: 30px 0 2px 20px;
     font-weight: 700;
 }
 
-.recently-played {
-    /* test */
-    background-color: lightcoral;
+.recently-played h3 {
+    padding: 30px 0;
+
 }
 
-.created-for {
-    /* test */
-    background-color: lightskyblue;
+.selected {
+    width: 30px;
+    border-bottom: 3px solid #adff2f;
+    margin-left: 35px;
+    
 }
 
-.most-popular {
-    /* test */
-    background-color: lightpink;
-}
 
-.evidence {
-    /* test */
-    background-color: salmon;
-}
-
-.podcast {
-    /* test */
-    background-color: violet;
-}
-
-.rank {
-    /* test */
-    background-color: lightseagreen;
-}
-
-.genre-mood {
-    /* test */
-    background-color:lightgoldenrodyellow
-}
-
-.new-release {
-    /* test */
-    background-color: blue;
-}
-
-.discover {
-    /* test */
-    background-color: chocolate;
-}
 
 /* END Main Content */
 
@@ -464,8 +438,6 @@ footer {
     font-size: 12px;
     text-align: right;
     padding: 15px 30px 0 0;
-    
-
 }
 
 .upgrade-banner a {
@@ -473,8 +445,7 @@ footer {
     padding: 15px 50px;
     border-radius: 50px;
     display: inline-block;
-    font-weight: 700;
-    
+    font-weight: 700;  
 }
 
 /*---------- END UPGRADE BANNER ----------*/
@@ -528,15 +499,16 @@ footer {
 /*---------- END HOVER ----------*/
 
 
+
+
 /******************** MEDIA QUERY ********************/
 
 /* MEDIUM */
 
 @media screen and (max-width: 1100px) {
     
-    .index div {
-        width: calc(100% / 5);
-    }
+    /* Main Content */
+
 
 }
 
@@ -544,6 +516,12 @@ footer {
 
 @media screen and (max-width: 700px) {
     
+    /* Main Content */
+    
+   
+
+    /* Footer */
+
    .save-download-song {
        display: block;
    } 
@@ -553,14 +531,12 @@ footer {
 
 @media screen and (max-width: 600px) {
 
+    /* Left Nav */
+
     .left-nav {
         width: 60px;
     }
 
-    .main-content {
-        width: 100%;
-    }
-    
     .top-left-nav {
         align-items: center;
     }
@@ -601,4 +577,13 @@ footer {
     .installation {
         border-bottom: 0;
     }
+
+    /* Main Content */
+
+    .main-content {
+        width: 100%;
+    }
+
+
+    
 }
