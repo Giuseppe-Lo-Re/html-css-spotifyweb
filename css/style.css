@@ -227,7 +227,6 @@ main {
     width: calc(100% - 250px);
     overflow-y: auto;
     padding-top: 100px;
-    /* test */
     background-color: #141922;
 }
 
@@ -240,10 +239,27 @@ footer {
     width: 100%;
     height: 100px;
     overflow-y: auto;
-    
+    background-color: #282825;
+}
 
-    /* test */
+.footer-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.info-song-left {
+    background-color: lightpink;
+}
+
+.song-controls-center {
     background-color: lightgreen;
+}
+
+.volume-controls-right {
+    background-color: lightcoral;
 }
 
 /* END FOOTER */
@@ -259,6 +275,7 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
+    font-size: 12px;
     text-align: right;
     vertical-align: middle;
     line-height: 80px;  
@@ -266,11 +283,32 @@ footer {
 
 .upgrade-banner a {
     border: 1px solid white;
-    padding: 10px 25px;
+    padding: 10px 40px;
     border-radius: 20px;
 }
 
 /* END UPGRADE BANNER */
+
+
+/*  HOVER */
+
+.upgrade-banner:hover {
+    transform: scale(1.2);
+}
+
+.search:hover,
+.library:hover,
+.create-playlist:hover,
+.name-playlist:hover,
+.install-app:hover {
+    color: white;
+}
+
+.plus:hover {
+    background-color: white;
+}
+
+/* END HOVER */
 
 
 /******************** MEDIA QUERY ********************/
