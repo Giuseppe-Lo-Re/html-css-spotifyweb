@@ -234,12 +234,73 @@ main {
     background-color: #141922;
 }
 
+.index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+
+    /* test
+    background-color: #adff2f; */
+}
+
+.index div {
+    padding: 0 10px;
+    color: #77797f;
+    font-weight: 700;
+}
+
+.recently-played {
+    /* test */
+    background-color: lightcoral;
+}
+
+.created-for {
+    /* test */
+    background-color: lightskyblue;
+}
+
+.most-popular {
+    /* test */
+    background-color: lightpink;
+}
+
+.evidence {
+    /* test */
+    background-color: salmon;
+}
+
+.podcast {
+    /* test */
+    background-color: violet;
+}
+
+.rank {
+    /* test */
+    background-color: lightseagreen;
+}
+
+.genre-mood {
+    /* test */
+    background-color:lightgoldenrodyellow
+}
+
+.new-release {
+    /* test */
+    background-color: blue;
+}
+
+.discover {
+    /* test */
+    background-color: chocolate;
+}
+
 /* END Main Content */
 
-/* END MAIN */
+/*---------- END MAIN ----------*/
 
 
-/* FOOTER */
+/*---------- FOOTER ----------*/
 
 footer {
     width: 100%;
@@ -315,12 +376,7 @@ footer {
 
 .icons-controls i {
     padding: 10px;
-    /* font-size: 20px; */
     color: white;
-}
-
-.play i {
-    /* font-size:14px; */
 }
 
 .timer {
@@ -392,10 +448,10 @@ footer {
     border-radius: 20px;
 }
 
-/* END FOOTER */
+/*---------- END FOOTER ----------*/
 
 
-/* UPGRADE BANNER */
+/*---------- UPGRADE BANNER ----------*/
 
 .upgrade-banner {
     background-color: rgba(0, 0, 0, 0.5);
@@ -421,10 +477,10 @@ footer {
     
 }
 
-/* END UPGRADE BANNER */
+/*---------- END UPGRADE BANNER ----------*/
 
 
-/*  HOVER */
+/*---------- HOVER ----------*/
 
 .upgrade-banner a:hover {
     transform: scale(1.1);
@@ -465,11 +521,11 @@ footer {
     background-color: #adff2f;
 }
 
-.bullet:hover {
+.track-wrap:hover .bullet {
     display: block;
-}
+ }
 
-/* END HOVER */
+/*---------- END HOVER ----------*/
 
 
 /******************** MEDIA QUERY ********************/
@@ -478,6 +534,9 @@ footer {
 
 @media screen and (max-width: 1100px) {
     
+    .index div {
+        width: calc(100% / 5);
+    }
 
 }
 
@@ -542,5 +601,4 @@ footer {
     .installation {
         border-bottom: 0;
     }
-
 }
