@@ -30,6 +30,13 @@ h3 {
     padding-top: 30px;
 }
 
+h4{
+    padding: 10px 5px;
+}
+
+h5 {
+    font-size: 12px;
+}
 
 /* Utility */
 
@@ -53,6 +60,9 @@ h3 {
     display: flex;
 }
 
+.b-radius {
+    border-radius: 50%;
+}
 /* END COMMON */
 
 
@@ -263,8 +273,10 @@ main {
     font-weight: 700;
 }
 
-h3 {
+h2 {
+    font-size: 35px;
     padding-top: 30px;
+    padding-left: 10px;
 }
 
 .selected {
@@ -282,20 +294,18 @@ h3 {
 
 .card-container {
     width: calc(100% / 6);
-    
 
-    /* test */
-    background-color: lightskyblue;
-    border: 1px solid red;
 }
 
 .card {
     padding: 10px;
+    text-align: center;
 }
 
 .subtitle {
     font-size: 12px;
     padding-top: 10px;
+    padding-left: 10px;
 }
 
 
@@ -409,11 +419,16 @@ footer {
     position: absolute;
 }
 
-.bullet {
+.bullet-track {
     display: none;
     position:relative;
-    top: -8px;
+    top: -7px;
     left: 91px;
+}
+
+.bullet-track,
+.bullet-volume {
+    font-size: 10px;
 }
 
 .volume-controls-right {
@@ -443,6 +458,14 @@ footer {
     width: 40px;
     background-color: white;
     opacity: calc(0.7);
+    position: absolute;
+}
+
+.bullet-volume {
+    display: none;
+    position:relative;
+    top: -6px;
+    left: 32px;
 }
 
 .track-wrap,
@@ -497,7 +520,8 @@ footer {
 .name-playlist:hover,
 .install-app:hover,
 .save-song:hover,
-.download-song:hover {
+.download-song:hover,
+.index a:hover {
     color: white;
 }
 
@@ -518,14 +542,20 @@ footer {
     transform: scale(1.1);
 }
 
-.track-bar:hover { 
+.track-bar:hover,
+.track-volume:hover { 
     background-color: #adff2f;
 }
 
-.track-wrap:hover .bullet {
+.track-wrap:hover .bullet-track,
+.max-volume:hover .bullet-volume {
     display: block;
  }
+ 
 
+.index a {
+
+}
 /*---------- END HOVER ----------*/
 
 
