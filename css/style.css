@@ -72,7 +72,8 @@ main {
     background-color: black ;
 }
 
-.left-nav img {
+.left-nav img,
+.save-download i {
     opacity: calc(0.7);
 }
 
@@ -271,7 +272,7 @@ footer {
 }
 
 .info-song-container {
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -292,6 +293,15 @@ footer {
     font-weight:700;
     width: 50%;
 }
+
+.save-download-song {
+    display: flex;
+}
+
+.save-download-song i {
+    padding-left: 5px;
+}
+
 
 .song-controls-center {
     /* background-color: lightgreen; */
@@ -323,14 +333,17 @@ footer {
     right: 0;
     font-size: 12px;
     text-align: right;
-    vertical-align: middle;
-    line-height: 80px;  
+    padding: 25px 5px 0 0;
+    
+
 }
 
 .upgrade-banner a {
     border: 1px solid white;
-    padding: 10px 40px;
-    border-radius: 20px;
+    padding: 5px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    
 }
 
 /* END UPGRADE BANNER */
@@ -356,6 +369,15 @@ footer {
 
 .plus:hover {
     background-color: white;
+}
+
+.song-name a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.save-download i:hover {
+    color: white;
 }
 
 /* END HOVER */
