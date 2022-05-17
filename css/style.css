@@ -359,6 +359,7 @@ footer {
 .volume-controls-right {
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .icons-volume {
