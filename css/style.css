@@ -25,6 +25,12 @@ ul {
     list-style-type: none;
 }
 
+h3 {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+
 /* Utility */
 
 .pad-left10 {
@@ -230,10 +236,12 @@ main {
 .main-content {
     width: calc(100% - 250px);
     overflow-y: auto;
-    padding-top: 100px;
+    padding: 80px 20px 20px 20px; 
     background-color: #141922;
     color:#a3a3a3;
 }
+
+/* index */
 
 .index {
     display: flex;
@@ -255,18 +263,40 @@ main {
     font-weight: 700;
 }
 
-.recently-played h3 {
-    padding: 30px 0;
-
+h3 {
+    padding-top: 30px;
 }
 
 .selected {
     width: 30px;
     border-bottom: 3px solid #adff2f;
-    margin-left: 35px;
-    
+    margin-left: 35px;  
 }
 
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.card-container {
+    width: calc(100% / 6);
+    
+
+    /* test */
+    background-color: lightskyblue;
+    border: 1px solid red;
+}
+
+.card {
+    padding: 10px;
+}
+
+.subtitle {
+    font-size: 12px;
+    padding-top: 10px;
+}
 
 
 /* END Main Content */
@@ -509,6 +539,9 @@ footer {
     
     /* Main Content */
 
+    .card-container {
+        width: calc(100% / 4);   
+    }
 
 }
 
@@ -518,6 +551,9 @@ footer {
     
     /* Main Content */
     
+    .card-container {
+        width: calc(100% / 2);   
+    }
    
 
     /* Footer */
