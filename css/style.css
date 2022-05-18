@@ -108,9 +108,9 @@ main {
     overflow-y: hidden;
 }
 
-.left-nav img,
+.top-left-nav img,
 .save-download i {
-    opacity: calc(0.9);
+    opacity: calc(0.7);
 }
 
 /* Top left Nav */
@@ -513,7 +513,7 @@ footer {
     transform: scale(1.1);
 }
 
-.left-nav img:hover {
+.top-left-nav img:hover {
     opacity: calc(1);
 }
 
