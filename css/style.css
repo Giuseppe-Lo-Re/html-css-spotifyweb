@@ -566,8 +566,8 @@ footer {
     background-color: #adff2f;
 }
 
-.track-bar:hover .bullet-track,
-.max-volume:hover .bullet-volume {
+.track-bar:hover + .bullet-track,
+.track-volume:hover + .bullet-volume {
     display: block;
  }
 
