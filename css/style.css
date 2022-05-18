@@ -83,7 +83,8 @@ h5 {
 
 .app-wrapper {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
+    min-width: 580px; 
 
     /* da ricontrollare */
     /* min-width: 600px;  */
@@ -434,7 +435,7 @@ footer {
 }
 
 .bullet-track {
-    display: block;
+    display: none;
     position:relative;
     top: -6px;
     left: 140px;
@@ -677,8 +678,5 @@ footer {
 
     .main-content {
         width: 100%;
-    }
-
-
-    
+    }  
 }
