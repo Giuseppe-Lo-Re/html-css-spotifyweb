@@ -36,12 +36,13 @@ h3 {
     padding-top: 30px;
 }
 
-h4{
+h4 {
+    font-size: 14px;
     padding: 10px 5px;
 }
 
 h5 {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .img-container {
@@ -49,12 +50,13 @@ h5 {
 }
 
 .img-container i {
-     display: none;
+    font-size: 50px;
+    color: white;
+    display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
-    color: white;
+    position: absolute; 
 }
 
 /* Utility */
@@ -272,9 +274,7 @@ main {
 
 .index {
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content: center;    
     font-size: 14px;
 }
 
@@ -343,6 +343,7 @@ footer {
 
 .info-song-left {
     height: 40px;
+    width: 15%;
 }
 
 .info-song-left img {
@@ -389,6 +390,7 @@ footer {
 
 .song-controls-center {
     width: 40%;
+    padding-left: 20px;
 }
 
 .icons-controls {
@@ -438,13 +440,13 @@ footer {
     display: flex;
     align-items: center;
     width: 22%;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 .icons-volume {
     display: flex;
     color: white;
-    padding-right: 10px;
+    padding-right: 15px;
     width: 63%;
 }
 
@@ -533,16 +535,11 @@ footer {
 }
 
 .img-container:hover i {
-    font-size: 55px;
     display: block;
 }
 
 .img-container:hover img {
-    opacity: calc(0.5);
-}
-
-.img-container img {
-    opacity: calc(1);
+    opacity: calc(0.4);
 }
 
 .song-name a:hover {
@@ -619,8 +616,7 @@ footer {
     }
 
     .logo-small {
-        display: inline-block;
-        padding-right:7px;        
+        display: inline-block;     
     }
 
     .logo {
@@ -666,5 +662,9 @@ footer {
 
 .icons-volume {
     display: inline-block; 
+}
+
+.icons-volume i {
+    padding-bottom: 3px;
 }
 }
