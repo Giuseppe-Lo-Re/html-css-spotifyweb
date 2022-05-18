@@ -25,6 +25,12 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
 h3 {
     font-size: 20px;
     padding-top: 30px;
@@ -49,7 +55,7 @@ h5 {
     transform: translate(-50%, -50%);
     position: absolute;
     color: white;
- }
+}
 
 /* Utility */
 
@@ -76,6 +82,7 @@ h5 {
 .b-radius {
     border-radius: 50%;
 }
+
 /* END COMMON */
 
 
@@ -85,9 +92,6 @@ h5 {
     width: 100%;
     height: 100vh;
     min-width: 580px; 
-
-    /* da ricontrollare */
-    /* min-width: 600px;  */
 }
 
 main {
@@ -106,7 +110,7 @@ main {
 
 .left-nav img,
 .save-download i {
-    opacity: calc(0.7);
+    opacity: calc(0.9);
 }
 
 /* Top left Nav */
@@ -120,7 +124,6 @@ main {
     font-size: 12px;
     font-weight: 600;
 }
-
 
 .menu li {
     padding: 5px;
@@ -138,7 +141,7 @@ main {
 
 .logo-small {
     width: 40px;
-    display: none;
+    display: none;   
 }
 
 .logo {
@@ -149,7 +152,6 @@ main {
     width: 25px;
     height: 25px;
 }
-
 
 /* Menù */
 
@@ -229,7 +231,6 @@ main {
     vertical-align: middle;
 }
 
-
 .user {
     padding: 10px 0;
     font-size: 14px;
@@ -244,7 +245,6 @@ main {
 
 .user span {
     padding-left: 10px;
-
 }
 
 /* common */
@@ -255,7 +255,10 @@ main {
 
 /*  END Bottom Left Nav */
 
-/* Main Content */
+/* END LEFT NAV */
+
+
+/* MAIN CONTENT */
 
 .main-content {
     width: calc(100% - 250px);
@@ -285,12 +288,6 @@ main {
 .index li {
     padding: 30px 0 2px 20px;
     font-weight: 700;
-}
-
-h2 {
-    font-size: 35px;
-    padding-top: 30px;
-    padding-left: 10px;
 }
 
 .selected {
@@ -323,7 +320,7 @@ h2 {
 }
 
 
-/* END Main Content */
+/* END MAIN CONTENT */
 
 /*---------- END MAIN ----------*/
 
@@ -333,7 +330,7 @@ h2 {
 footer {
     width: 100%;
     height: 100px;
-    overflow-y: auto;
+    overflow: hidden;
     background-color: #282825;
 }
 
@@ -345,7 +342,6 @@ footer {
 }
 
 .info-song-left {
-    width: 220px;
     height: 40px;
 }
 
@@ -393,14 +389,14 @@ footer {
 
 .song-controls-center {
     width: 40%;
-    padding: 0 50px;
+    /* padding: 0 50px; */
 }
 
 .icons-controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .icons-controls i {
@@ -411,6 +407,7 @@ footer {
 .timer {
     color: white;
     font-size: 10px;
+    padding: 10px;
 }
 
 .time-bar {
@@ -419,58 +416,41 @@ footer {
     align-items: center;
 }
 
+.track-bar { 
+    height: 5px;
+    width: 30%;
+    background-color: white;
+    opacity: calc(0.7);
+}
+
 .track-wrap {
     height: 5px;
     width: 100%;
     background-color: #4b4b4b; 
-    margin: 0 10px;
-}
-
-.track-bar { 
-    height: 5px;
-    width: 9%;
-    background-color: white;
-    opacity: calc(0.7);
-    position: absolute;
 }
 
 .bullet-track {
-    display: none;
-    position:relative;
-    top: -6px;
-    left: 140px;
+    display: none;   
 }
 
 .bullet-track,
 .bullet-volume {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .volume-controls-right {
-    width: 300px;
     display: flex;
     align-items: center;
     padding: 10px;
 }
 
 .icons-volume {
-    width: 150px;
     color: white;
     padding-right: 10px;
 }
 
 .icons-volume i {
-    padding-left: 15px;
-}
-
-.volume-bar {
-    width: 150px;
-}
-
-.max-volume {
-    height: 5px;
-    width:150px;
-    background-color: #4b4b4b; 
+    padding-left: 10px;
 }
 
 .track-volume { 
@@ -479,6 +459,12 @@ footer {
     background-color: white;
     opacity: calc(0.7);
     position: absolute;
+}
+
+.max-volume {
+    height: 5px;
+    width:150px;
+    background-color: #4b4b4b; 
 }
 
 .bullet-volume {
@@ -498,7 +484,7 @@ footer {
 /*---------- END FOOTER ----------*/
 
 
-/*---------- UPGRADE BANNER ----------*/
+/*-------- UPGRADE BANNER --------*/
 
 .upgrade-banner {
     background-color: rgba(0, 0, 0, 0.5);
@@ -521,11 +507,10 @@ footer {
     font-weight: 700;  
 }
 
-/*---------- END UPGRADE BANNER ----------*/
+/*-------- END UPGRADE BANNER --------*/
 
 
 /*---------- HOVER ----------*/
-
 
 .upgrade-banner a:hover {
     transform: scale(1.1);
@@ -554,10 +539,10 @@ footer {
     font-size: 55px;
     display: block;
 }
+
 .img-container:hover img {
     opacity: calc(0.5);
 }
-
 
 .img-container img {
     opacity: calc(1);
@@ -581,7 +566,7 @@ footer {
     background-color: #adff2f;
 }
 
-.track-wrap:hover .bullet-track,
+.track-bar:hover .bullet-track,
 .max-volume:hover .bullet-volume {
     display: block;
  }
@@ -602,7 +587,6 @@ footer {
     .card-container {
         width: calc(100% / 4);   
     }
-
 }
 
 /* SMALL */
