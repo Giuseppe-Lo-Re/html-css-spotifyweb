@@ -469,9 +469,9 @@ footer {
 
 .bullet-volume {
     display: none;
-    position:relative;
-    top: -6px;
-    left: 32px;
+    position: relative;
+    bottom:7px;
+    left:30px;
 }
 
 .track-wrap,
