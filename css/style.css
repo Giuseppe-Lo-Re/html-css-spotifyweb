@@ -389,7 +389,6 @@ footer {
 
 .song-controls-center {
     width: 40%;
-    /* padding: 0 50px; */
 }
 
 .icons-controls {
@@ -429,49 +428,47 @@ footer {
     background-color: #4b4b4b; 
 }
 
-.bullet-track {
-    display: none;   
-}
-
 .bullet-track,
 .bullet-volume {
-    font-size: 16px;
+    font-size: 12px;
+    display: none;
 }
 
 .volume-controls-right {
     display: flex;
     align-items: center;
+    width: 22%;
     padding: 10px;
 }
 
 .icons-volume {
+    display: flex;
     color: white;
     padding-right: 10px;
+    width: 63%;
 }
 
 .icons-volume i {
     padding-left: 10px;
 }
 
+.volume-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .track-volume { 
     height: 5px;
-    width: 40px;
+    width: 20%;
     background-color: white;
     opacity: calc(0.7);
-    position: absolute;
 }
 
 .max-volume {
     height: 5px;
-    width:150px;
+    width:80%;
     background-color: #4b4b4b; 
-}
-
-.bullet-volume {
-    display: none;
-    position: relative;
-    bottom:7px;
-    left:30px;
 }
 
 .track-wrap,
@@ -663,4 +660,11 @@ footer {
     .main-content {
         width: 100%;
     }  
+
+    /* Footer */
+
+
+.icons-volume {
+    display: inline-block; 
+}
 }
