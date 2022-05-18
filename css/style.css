@@ -38,6 +38,19 @@ h5 {
     font-size: 12px;
 }
 
+.img-container {
+    position: relative
+}
+
+.img-container i {
+     display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+ }
+
 /* Utility */
 
 .pad-left10 {
@@ -378,6 +391,7 @@ footer {
 }
 
 .song-controls-center {
+    width: 40%;
     padding: 0 50px;
 }
 
@@ -406,24 +420,24 @@ footer {
 
 .track-wrap {
     height: 5px;
-    width: 500px;
+    width: 100%;
     background-color: #4b4b4b; 
     margin: 0 10px;
 }
 
 .track-bar { 
     height: 5px;
-    width: 100px;
+    width: 9%;
     background-color: white;
     opacity: calc(0.7);
     position: absolute;
 }
 
 .bullet-track {
-    display: none;
+    display: block;
     position:relative;
-    top: -7px;
-    left: 91px;
+    top: -6px;
+    left: 140px;
 }
 
 .bullet-track,
@@ -432,6 +446,7 @@ footer {
 }
 
 .volume-controls-right {
+    width: 300px;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -440,16 +455,20 @@ footer {
 .icons-volume {
     width: 150px;
     color: white;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .icons-volume i {
-    padding-left: 20px;
+    padding-left: 15px;
+}
+
+.volume-bar {
+    width: 150px;
 }
 
 .max-volume {
     height: 5px;
-    width: 150px;
+    width:150px;
     background-color: #4b4b4b; 
 }
 
@@ -506,6 +525,7 @@ footer {
 
 /*---------- HOVER ----------*/
 
+
 .upgrade-banner a:hover {
     transform: scale(1.1);
 }
@@ -527,6 +547,19 @@ footer {
 
 .plus:hover {
     background-color: white;
+}
+
+.img-container:hover i {
+    font-size: 55px;
+    display: block;
+}
+.img-container:hover img {
+    opacity: calc(0.5);
+}
+
+
+.img-container img {
+    opacity: calc(1);
 }
 
 .song-name a:hover {
@@ -551,11 +584,7 @@ footer {
 .max-volume:hover .bullet-volume {
     display: block;
  }
- 
 
-.index a {
-
-}
 /*---------- END HOVER ----------*/
 
 
